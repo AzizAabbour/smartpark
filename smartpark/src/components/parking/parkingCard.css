@@ -1,0 +1,229 @@
+.parking-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card-image-box {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.parking-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.parking-card:hover .parking-image {
+  transform: scale(1.05);
+}
+
+.card-top-badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.badge-ev {
+  background-color: #065F46;
+  color: #D1FAE5;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-rate-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  color: #FFFFFF;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.hourly-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hourly-unit {
+  font-size: 11px;
+  color: #CBD5E1;
+}
+
+.card-body-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.facility-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.facility-title a {
+  color: var(--main-text);
+  transition: color var(--transition-fast);
+}
+
+.facility-title a:hover {
+  color: var(--primary-blue);
+}
+
+.rating-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #FEF3C7;
+  color: #B45309;
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.star-icon {
+  color: #F59E0B;
+}
+
+.review-count {
+  font-weight: 400;
+  color: #92400E;
+}
+
+.facility-address {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--secondary-text);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.loc-icon {
+  flex-shrink: 0;
+  color: var(--muted-text);
+}
+
+.spaces-progress-container {
+  margin-bottom: 16px;
+  background-color: #F8FAFC;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #EDF2F7;
+}
+
+.progress-info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.capacity-label {
+  color: var(--secondary-text);
+}
+
+.capacity-numbers {
+  color: var(--main-text);
+}
+
+.text-success { color: var(--success); }
+.text-danger { color: var(--danger); }
+
+.progress-bar-track {
+  height: 6px;
+  background-color: #E2E8F0;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.fill-low { background-color: var(--success); }
+.fill-medium { background-color: var(--warning); }
+.fill-high { background-color: var(--danger); }
+
+.features-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.feat-chip {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feat-chip-more {
+  background-color: #F1F5F9;
+  color: var(--secondary-text);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.card-footer-actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-distance {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.action-buttons-group {
+  display: flex;
+  gap: 8px;
+}

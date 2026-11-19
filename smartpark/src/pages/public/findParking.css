@@ -1,0 +1,224 @@
+.find-parking-page {
+  padding-bottom: 60px;
+}
+
+.find-parking-top-banner {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 36px 0 28px 0;
+}
+
+.page-main-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--main-text);
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.page-desc {
+  font-size: 15px;
+  color: var(--secondary-text);
+  margin-bottom: 24px;
+}
+
+.find-search-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 16px;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.search-icon {
+  color: var(--secondary-text);
+}
+
+.find-text-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: var(--main-text);
+}
+
+.quick-filter-dropdowns {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: #F8FAFC;
+  font-size: 13px;
+  color: var(--main-text);
+  outline: none;
+}
+
+.filter-select:focus {
+  border-color: var(--primary-blue);
+}
+
+.find-parking-body {
+  margin-top: 24px;
+}
+
+.filter-chips-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.active-filter-toggles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: white;
+  font-size: 13px;
+  color: var(--secondary-text);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-chip:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.filter-chip.chip-active {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  border-color: #93C5FD;
+  font-weight: 600;
+}
+
+.price-slider-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+}
+
+.price-label {
+  font-size: 13px;
+  color: var(--secondary-text);
+  white-space: nowrap;
+}
+
+.price-label strong {
+  color: var(--main-text);
+}
+
+.price-range-slider {
+  width: 90px;
+  cursor: pointer;
+}
+
+.filter-strip-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--secondary-text);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  color: var(--primary-blue);
+}
+
+.results-count-text {
+  font-size: 13px;
+  color: var(--secondary-text);
+}
+
+/* Layout */
+.find-parking-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.facilities-column {
+  min-width: 0;
+}
+
+.facilities-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.highlighted-card-wrapper {
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 0 2px var(--primary-blue);
+}
+
+.map-column {
+  position: relative;
+}
+
+.sticky-map-wrapper {
+  position: sticky;
+  top: 92px;
+}
+
+.empty-results-box {
+  padding: 60px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty-icon {
+  color: var(--muted-text);
+}
+
+@media (max-width: 1024px) {
+  .find-parking-layout {
+    grid-template-columns: 1fr;
+  }
+  .sticky-map-wrapper {
+    position: static;
+  }
+}

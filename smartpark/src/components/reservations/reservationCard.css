@@ -1,0 +1,150 @@
+.reservation-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.res-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.res-reference-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.res-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.res-reference-code {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--main-text);
+  font-family: monospace;
+}
+
+.res-status-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.res-card-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.res-facility-info {
+  flex: 1;
+}
+
+.res-facility-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-text);
+  margin-bottom: 12px;
+}
+
+.res-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+}
+
+.res-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-label {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.item-val {
+  font-size: 14px;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+.space-val {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.res-amount-box {
+  background-color: var(--light-blue);
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+  text-align: right;
+  min-width: 140px;
+  border: 1px solid #DBEAFE;
+}
+
+.res-amount-label {
+  font-size: 11px;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+}
+
+.res-amount-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  display: block;
+}
+
+.res-duration {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.res-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.res-created-date {
+  font-size: 12px;
+  color: var(--muted-text);
+}
+
+.res-actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 680px) {
+  .res-card-middle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .res-amount-box {
+    width: 100%;
+    text-align: left;
+  }
+  .res-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
